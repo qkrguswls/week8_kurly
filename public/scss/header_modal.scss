@@ -1,0 +1,39 @@
+#wrap {
+    width: 100%;
+    #headerModal {
+        width: 100%;
+        background: #5f0080;
+        .container {
+            width: 100%;
+            max-width: 1050px;
+            margin: 0 auto;
+            .content {
+                width: 100%;           
+                a {
+                    text-align: center;
+                    width: 100%;
+                    display: block;
+                    color: #fff;
+                    font-size: 14px;
+                    position: relative;
+                    height: 42px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    strong {
+                        font-weight: 700;
+                    }
+                    span {
+                        img {
+                            width: 20px;
+                            height: 20px;
+                            position: absolute;
+                            right: 0;
+                            top: 11px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

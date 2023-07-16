@@ -1,0 +1,55 @@
+#introModal {
+    z-index: 4;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh; //화면높이 다쓰겠다
+    background: rgba(0,0,0, 0);
+    .container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        max-width: 1050px;
+        margin: 0 auto;
+        .wrap {
+            // margin: auto; 부모에서 저스티파이 어라인 두번할걸 자식에서 하면 이것만써도 가운데정렬됨
+            margin: auto auto auto 0; //오른쪽은 알아서 왼쪽으로 붙이게
+            width: 440px;
+            height: auto;
+            .content {
+                width: 100%;
+                border-radius: 7px;
+                overflow: hidden;
+                ul {
+                    width: 100%;
+                    li {
+                        width: 100%;
+                        &:nth-child(2) {
+                            height: 60px;
+                            display: flex;
+                            border-top: 1px solid #fff;
+                        }
+                        a {
+                            display: block;
+                            width: 100%;
+                            img {
+                                width: 100%;
+                            }
+                        }
+                        button {
+                            width: 50%;
+                            height: 100%;
+                            border: 0;
+                            background: #fff;
+                            cursor: pointer;
+                            font-size: 17px;
+                            font-weight: 500;
+                            color: #333;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
